@@ -1,0 +1,18 @@
+put 400 0
+put 401 1
+put 402 120 // INPUT first number (must be bigger than second)
+put 403 36 // INPUT second number
+point 12 409 // start
+point 53 410 // to end
+je 402 400 410
+point 47 411
+jb 402 403 411 // if first is bigger than second
+add 400 402 404 
+put 402 0
+add 400 403 402
+put 403 0 // 42
+add 400 404 403
+sub 402 403 402
+goto 409
+output 403
+exit
